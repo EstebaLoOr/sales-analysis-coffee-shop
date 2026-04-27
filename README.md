@@ -43,7 +43,7 @@ The dashboard includes executive KPIs such as:
 - Top Selling Products
 - Sales by Hour
 
-![Dashboard preview](coffee_shop_dashboard.pbix)
+![Dashboard preview](dashboard_preview.PNG)
 
 ### Why it matters
 
@@ -166,12 +166,12 @@ It helps quickly identify:
 ┗ 📄 LICENSE
 ```
 
-🚀 How to Use This Project
-Clone Repository
-git clone https://github.com/EstebaLoOr/sales-analysis-coffee-shop.git
-cd sales-analysis-coffee-shop
+# How to Use This Project
+- Clone Repository
+- git clone https://github.com/EstebaLoOr/sales-analysis-coffee-shop.git
+- cd sales-analysis-coffee-shop
 
-Open Files
-[SQL analysis](coffee_shop_analysis.sql)
-[Power Bi Dashboard](coffee_shop_dashboard.pbix)
-[Data](clean_coffee_shop_data.csv)
+# Open Files
+- [SQL analysis](coffee_shop_analysis.sql)
+- [Power Bi Dashboard](coffee_shop_dashboard.pbix)
+- [Data](clean_coffee_shop_data.csv)
