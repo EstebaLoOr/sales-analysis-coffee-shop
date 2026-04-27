@@ -134,17 +134,11 @@ N/A
 git clone https://github.com/EstebaLoOr/sales-analysis-coffee-shop.git
 cd sales-analysis-coffee-shop
 
-2. Revisar SQL
+## Archivos del proyecto
 
-Abrir archivo:
-
-SQL/coffee_shop_analysis.sql
-
-3. Abrir Dashboard
-
-Abrir en Power BI:
-
-dashboard/coffee_shop_dashboard.pbix
+- 📄 [SQL Analysis](SQL/coffee_shop_analysis.sql)
+- 📊 [Power BI Dashboard](dashboard/coffee_shop_dashboard.pbix)
+- 🖼️ [Dashboard Preview](images/dashboard_preview.PNG)
 
 👤 Autor
 Esteban López Ortega
