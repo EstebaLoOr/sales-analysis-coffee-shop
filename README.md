@@ -172,9 +172,10 @@ It helps quickly identify:
 - cd sales-analysis-coffee-shop
 
 # Open Files
-- [SQL analysis](SQL/coffee_shop_analysis.sql)
-- [Power Bi Dashboard](dashboard/coffee_shop_dashboard.pbix)
-- [Data](data/clean_coffee_shop_data.csv)
+- [SQL analysis:](SQL/coffee_shop_analysis.sql)
+- [Power Bi Dashboard:](dashboard/coffee_shop_dashboard.pbix)
+- [Data:](data/clean_coffee_shop_data.csv)
+- [For a more detailed explanation, check:](documentation/coffee_shop_documentation_en.md)
 
 #👤 Autor
 ### Esteban López Ortega
@@ -362,6 +363,7 @@ Permite detectar rápidamente:
 - [SQL analysis](SQL/coffee_shop_analysis.sql)
 - [Power Bi Dashboard](dashboard/coffee_shop_dashboard.pbix)
 - [Data](data/clean_coffee_shop_data.csv)
+- [Para ver el análisis completo:](documentation/coffee_shop_documentation_es.md)
 
 #👤 Autor
 ### Esteban López Ortega
