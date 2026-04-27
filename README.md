@@ -230,6 +230,8 @@ El dashboard incluye KPIs ejecutivos como:
 - Productos más vendidos
 - Ventas por hora
 
+![Dashboard preview](images/dashboard_preview.PNG)
+
 ### ¿Por qué es importante?
 
 Permite detectar rápidamente:
