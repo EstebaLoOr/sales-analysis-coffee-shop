@@ -1,108 +1,146 @@
-# 📊 Sales Analysis to Identify Low-Profitability Products
+# 📊 Sales Analysis to Identify Low-Profitability Products  
+### Coffee Shop Business Intelligence Case Study
 
-## Descripción breve
-
-Análisis de ventas de una cafetería real en Cuernavaca, Morelos, para identificar productos de baja rentabilidad, patrones de consumo y oportunidades de crecimiento mediante SQL y Power BI.  
-El objetivo principal fue traducir datos históricos en decisiones accionables para aumentar ingresos y optimizar el mix de productos.
-
----
-
-# 🧠 Problema / Justificación
-
-La cafetería **Corazón de Piedra** contaba con datos históricos de ventas, pero sin una visión clara sobre qué productos generan mayor valor, cuáles tienen bajo desempeño y en qué horarios o días existen oportunidades comerciales.
-
-Este análisis fue motivado por la necesidad de responder preguntas clave como:
-
-- ¿Qué productos impulsan más ingresos?
-- ¿Qué artículos venden poco o aportan bajo valor?
-- ¿Cuándo se concentran las ventas?
-- ¿Cómo aumentar ticket promedio sin atraer más clientes?
-
-### Beneficiarios del análisis:
-
-- Dueño / Dirección del negocio
+> **English version first for U.S. recruiters and hiring managers**  
+> *Versión en español más abajo.*
 
 ---
 
-# 📈 Visualización Destacada
+# 🇺🇸 English Version
 
-El dashboard principal muestra KPIs ejecutivos como ventas netas, ticket promedio, número de tickets y evolución mensual, junto con análisis por categoría, productos top sellers y ventas por horario.
+## 📌 Project Overview
 
-Es importante porque permite detectar rápidamente:
+Sales analysis of a real coffee shop located in Cuernavaca, Mexico, focused on identifying low-profitability products, customer purchasing behavior, and revenue growth opportunities using **SQL** and **Power BI**.
 
-- Días y horas pico
-- Productos estrella
-- Oportunidades de cross-sell
-- Dependencia del fin de semana
-- Tendencias de crecimiento
+The main objective was to transform historical sales data into actionable business decisions to increase revenue and optimize the product mix.
 
 ---
 
-# 📂 Conjunto de Datos
+# 🧠 Business Problem
 
-**Fuente:** Exportación interna del sistema Punto de Venta (TPV)  
-**Tamaño:** 16,656 filas / 23 columnas  
-**Formato:** CSV → SQL Database → Power BI
+The coffee shop **Corazón de Piedra** had historical sales data available, but lacked visibility into:
 
-## Variables clave:
+- Which products generated the most value
+- Which items underperformed
+- When demand peaked during the week
+- How to increase average ticket size without increasing customer traffic
 
-- `fecha` → Fecha y hora de la transacción  
-- `numero_de_recibo` → ID del ticket  
-- `categoria` → Categoría del producto  
-- `articulo` → Nombre del producto  
-- `cantidad` → Unidades vendidas  
-- `ventas_netas` → Venta final después de descuentos  
-- `tipo_de_recibo` → Venta o reembolso  
-- `tipo_de_pedido` → Comer dentro / Para llevar
+### Stakeholders
 
-## Notas:
-
-- Existían registros duplicados (~3%)
-- Valores faltantes en campos de cliente
-- Errores de codificación UTF-8
-- Algunas categorías incompletas y reclasificadas manualmente
+- Business Owner / Management
 
 ---
 
-# 🔍 Proceso de Análisis
+# 📈 Featured Dashboard
+
+The dashboard includes executive KPIs such as:
+
+- Net Revenue
+- Average Ticket Size
+- Number of Transactions
+- Monthly Sales Trend
+- Sales by Category
+- Top Selling Products
+- Sales by Hour
+
+![Dashboard preview](coffee_shop_dashboard.pbix)
+
+### Why it matters
+
+It helps quickly identify:
+
+- Peak days and hours
+- Best-selling products
+- Cross-sell opportunities
+- Weekend dependency
+- Revenue trends
+
+---
+
+# 📂 Dataset
+
+**Source:** Internal Point-of-Sale (POS) export  
+**Size:** 16,656 rows / 23 columns  
+**Format:** CSV → SQL Database → Power BI
+
+### Key Variables
+
+- `fecha` → Transaction date & time  
+- `numero_de_recibo` → Receipt ID  
+- `categoria` → Product category  
+- `articulo` → Product name  
+- `cantidad` → Units sold  
+- `ventas_netas` → Net sales amount  
+- `tipo_de_recibo` → Sale / Refund  
+- `tipo_de_pedido` → Dine-in / Takeaway
+
+### Data Quality Notes
+
+- ~3% duplicate records removed
+- Missing customer fields
+- UTF-8 encoding issues fixed
+- Some missing categories manually reclassified
+
+---
+
+# 🔍 Analysis Process
 
 ## 1. Exploratory Data Analysis (EDA)
 
-- Distribución de ventas por categoría y producto
-- Ventas por día, mes y hora
-- Detección de tickets promedio
-- Identificación de productos top sellers
-- Evaluación de ventas cruzadas (bebida + alimento)
+- Sales distribution by category and product
+- Revenue by day, month, and hour
+- Average ticket analysis
+- Top-selling products
+- Cross-sell behavior (drink + food)
 
-## 2. Preprocesamiento
+## 2. Data Cleaning / Preprocessing
 
-- Limpieza de nulos
-- Eliminación de duplicados
-- Conversión de tipos de datos
-- Normalización de texto
-- Corrección de encoding
-- Reclasificación manual de productos
+- Null handling
+- Duplicate removal
+- Data type conversion
+- Text normalization
+- Encoding corrections
+- Manual product categorization
 
-## 3. Análisis / Modelado
-N/A
+## 3. Business Analysis
 
----
-
-# 💡 Principales Hallazgos
-
-📌 La cafetería generó **$1.20M MXN** en menos de un año.  
-
-📌 El ticket promedio fue **$258 MXN**, nivel sólido para cafetería local.  
-
-📌 Solo **48.85%** de tickets combinaron bebida + alimento, mostrando oportunidad clara de cross-selling.  
-
-📌 Viernes, sábado y domingo concentran mayor demanda.  
-
-📌 Existe potencial estimado de **+10% en ingresos** aumentando ticket promedio y optimizando días lentos.
+- KPI development
+- Revenue opportunity sizing
+- Product performance review
+- Operational demand analysis
 
 ---
 
-# 🛠️ Tecnologías Utilizadas
+# 💡 Key Findings
+
+📌 The coffee shop generated **$1.20M MXN** in less than one year.  
+
+📌 Average ticket size reached **$258 MXN**, strong for a local coffee shop.  
+
+📌 Only **48.85%** of tickets included both drink + food, showing cross-sell opportunity.  
+
+📌 Friday, Saturday, and Sunday concentrated the highest demand.  
+
+📌 Estimated potential of **+10% revenue growth** through ticket optimization and slow-day activation.
+
+---
+
+# 📈 Business Impact
+
+### Estimated Revenue Drivers
+
+- Increase average ticket size by 10%
+- Improve food + drink bundle rate
+- Activate low-performing weekdays
+- Improve product mix decisions
+
+### Estimated Outcome
+
+**+$120K to +$180K MXN annual upside potential**
+
+---
+
+# 🛠️ Tools & Technologies
 
 - SQL (MySQL)
 - Power BI
@@ -112,9 +150,9 @@ N/A
 
 ---
 
-# 📁 Estructura del Repositorio
+# 📁 Repository Structure
 
-```
+```text
 📦 sales-analysis-coffee-shop
 ┣ 📂 SQL
 ┃ ┗ 📄 coffee_shop_analysis.sql
@@ -123,35 +161,17 @@ N/A
 ┣ 📂 data
 ┃ ┗ 📄 clean_coffee_shop_data.csv
 ┣ 📂 images
-┃ ┗ 📄 dashboard_preview.png
+┃ ┗ 📄 dashboard_preview.PNG
 ┣ 📄 README.md
 ┗ 📄 LICENSE
-``` 
+```
 
-🚀 Cómo Usar este Proyecto
-
-1. Clonar repositorio
+🚀 How to Use This Project
+Clone Repository
 git clone https://github.com/EstebaLoOr/sales-analysis-coffee-shop.git
 cd sales-analysis-coffee-shop
 
-## Archivos del proyecto
-
-- 📄 [SQL Analysis](SQL/coffee_shop_analysis.sql)
-- 📊 [Power BI Dashboard](dashboard/coffee_shop_dashboard.pbix)
-- 🖼️ [Dashboard Preview](images/dashboard_preview.PNG)
-
-👤 Autor
-Esteban López Ortega
-LinkedIn: https://www.linkedin.com/in/esteban-lopez-711527102/
-GitHub: https://github.com/EstebaLoOr
-
-⭐ Notas Finales
-Limitaciones
-No se contó con costos unitarios confiables por producto
-No se incluyeron variables externas (clima, eventos, estacionalidad)
-Mejoras Futuras
-Análisis de recurrencia de clientes
-Rentabilidad real por producto
-Forecast de demanda
-Dashboard ejecutivo automatizado
-Programa de lealtad basado en datos
+Open Files
+[SQL analysis](coffee_shop_analysis.sql)
+[Power Bi Dashboard](coffee_shop_dashboard.pbix)
+[Data](clean_coffee_shop_data.csv)
